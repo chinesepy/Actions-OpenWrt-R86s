@@ -6,7 +6,17 @@ A template for building OpenWrt with GitHub Actions
 
 ## Tips
 
-- 自用openwrt固件for R86S 2.5G网卡版（脚本删除了编译后上传网盘，修改了set-output，添加了kenzok8的两个源，未修改默认ip；config文件参考了 [OpenWrt-Rpi](https://github.com/SuLingGG/OpenWrt-Rpi)的内容，删除了无线相关、usb相关、除了翻墙外的VPN、samba、磁盘休眠、内网穿透、以及下载工具，添加了迅雷快鸟，wol，kms以及IPTV用的udpxy和omcproxy，主题为argonne带自定义配置）
+- 自用openwrt固件for R86S 2.5G网卡版（脚本删除了编译后上传网盘，修改了set-output，添加了kenzok8的两个源，未修改默认ip；config文件参考了 [OpenWrt-Rpi](https://github.com/SuLingGG/OpenWrt-Rpi)的内容，删除了无线相关、usb相关、除了翻墙外的VPN、samba、磁盘休眠、内网穿透、以及下载工具，添加了Socat、迅雷快鸟、wol、kms以及IPTV用的udpxy和omcproxy，主题为argonne带自定义配置）
+
+
+## 自定义软件源
+配置注释掉 option check_signature
+src/gz openwrt_core https://openwrt.cc/snapshots/targets/x86/64/packages
+src/gz openwrt_base https://openwrt.cc/snapshots/packages/x86_64/base
+src/gz openwrt_luci https://openwrt.cc/snapshots/packages/x86_64/luci
+src/gz openwrt_packages https://openwrt.cc/snapshots/packages/x86_64/packages/
+src/gz openwrt_routing https://openwrt.cc/snapshots/packages/x86_64/routing/
+src/gz openwrt_telephony https://openwrt.cc/snapshots/packages/x86_64/telephony/
 
 ## Usage
 
