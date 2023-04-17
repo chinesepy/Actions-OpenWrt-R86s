@@ -12,13 +12,13 @@ A template for building OpenWrt with GitHub Actions
 ## 软件源
 - 配置注释掉 # option check_signature
 - 注释掉自带软件源里头的kenzok和small的两个无效源
-- 自定义软件源里头添加以下
+- 自定义软件源
 - src/gz openwrt_core https://openwrt.cc/snapshots/targets/x86/64/packages
 - src/gz openwrt_base https://openwrt.cc/snapshots/packages/x86_64/base
 - src/gz openwrt_luci https://openwrt.cc/snapshots/packages/x86_64/luci
-- src/gz openwrt_packages https://openwrt.cc/snapshots/packages/x86_64/packages/
-- src/gz openwrt_routing https://openwrt.cc/snapshots/packages/x86_64/routing/
-- src/gz openwrt_telephony https://openwrt.cc/snapshots/packages/x86_64/telephony/
+- src/gz openwrt_packages https://openwrt.cc/snapshots/packages/x86_64/packages
+- src/gz openwrt_routing https://openwrt.cc/snapshots/packages/x86_64/routing
+- src/gz openwrt_telephony https://openwrt.cc/snapshots/packages/x86_64/telephony
 
 ## Usage
 
