@@ -158,8 +158,9 @@ jobs:
         files: ${{ env.FIRMWARE }}/*
 
     - name: Delete workflow runs
-      uses: chinesepy/delete-workflow-runs@main
+      uses: Mattraks/delete-workflow-runs@main
       with:
+        token: ${{ secrets.GITHUB_TOKEN }}
         retain_days: 1
         keep_minimum_runs: 3
 
